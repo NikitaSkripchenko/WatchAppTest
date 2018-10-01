@@ -8,10 +8,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14238.10"/>
     </dependencies>
     <scenes>
-        <!--Schedule Interface Controller-->
+        <!--Title-->
         <scene sceneID="jXI-cj-RMT">
             <objects>
-                <controller hidesWhenLoading="NO" id="U9F-in-E85" customClass="ScheduleInterfaceController" customModule="FitFirst_Extension">
+                <controller identifier="Schedule" title="Title" id="U9F-in-E85" customClass="ScheduleInterfaceController" customModule="FitFirst_Extension">
                     <items>
                         <table alignment="left" id="O1C-Nr-ai4">
                             <items>
@@ -52,6 +52,8 @@
                                         <outlet property="destinationLabel" destination="Mdb-75-yZc" id="tbE-Di-xnZ"/>
                                         <outlet property="flightNumberLabel" destination="c7q-DP-OgM" id="6bW-IM-dOJ"/>
                                         <outlet property="originLabel" destination="KaK-e7-Fqz" id="Dq6-wL-042"/>
+                                        <outlet property="planeImage" destination="pl4-wk-Qrq" id="3E3-Fv-M75"/>
+                                        <outlet property="separator" destination="Kn4-EI-dqt" id="fpV-fd-Klh"/>
                                         <outlet property="statusLabel" destination="5mH-nA-yar" id="GRt-EN-DJ8"/>
                                     </connections>
                                 </tableRow>
@@ -64,6 +66,47 @@
                 </controller>
             </objects>
             <point key="canvasLocation" x="-100" y="345"/>
+        </scene>
+        <!--CheckIn-->
+        <scene sceneID="eFN-BV-qRw">
+            <objects>
+                <controller identifier="CheckIn" title="CheckIn" id="sL4-FD-whW" customClass="CheckInInterfaceController" customModule="FitFirst_Extension">
+                    <items>
+                        <group width="1" height="1" alignment="left" contentMode="center" layout="vertical" id="655-HP-Sw0">
+                            <items>
+                                <group width="1" height="32" alignment="right" spacing="4" id="Z6u-A5-Wgh">
+                                    <items>
+                                        <label alignment="right" verticalAlignment="center" text="MEL" id="4Mw-Ae-wa2"/>
+                                        <imageView width="24" height="20" alignment="center" verticalAlignment="center" image="Plane" id="rAY-dU-hdq">
+                                            <color key="tintColor" red="0.85098039219999999" green="0.1058823529" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </imageView>
+                                        <label alignment="left" verticalAlignment="center" text="SFO" id="bzM-gX-2mU"/>
+                                    </items>
+                                </group>
+                                <button alignment="center" verticalAlignment="center" id="0En-HG-tXX">
+                                    <group key="contentGroup" width="78" height="78" alignment="left" layout="vertical" radius="39" id="bHY-u0-XKh">
+                                        <items>
+                                            <label alignment="center" verticalAlignment="center" text="Check In" id="oDL-Ta-Thl">
+                                                <fontDescription key="font" type="system" weight="semibold" pointSize="15"/>
+                                            </label>
+                                        </items>
+                                        <color key="backgroundColor" red="0.85098039219999999" green="0.1058823529" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </group>
+                                    <connections>
+                                        <action selector="checkInButtonTapped" destination="sL4-FD-whW" id="zgJ-Bs-7Dp"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="backgroundGroup" destination="655-HP-Sw0" id="jeV-8y-ITD"/>
+                        <outlet property="destinationLabel" destination="4Mw-Ae-wa2" id="jsz-tr-RqD"/>
+                        <outlet property="originLabel" destination="bzM-gX-2mU" id="O9c-zR-8cY"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-128" y="636"/>
         </scene>
         <!--Flight-->
         <scene sceneID="Ndd-MD-dj7">

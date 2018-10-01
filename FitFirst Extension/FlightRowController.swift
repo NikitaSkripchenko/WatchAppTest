@@ -10,7 +10,7 @@ import WatchKit
 import Foundation
 
 
-class FlightRowController: WKInterfaceController {
+class FlightRowController: NSObject {
   @IBOutlet var separator: WKInterfaceSeparator!
   @IBOutlet var originLabel: WKInterfaceLabel!
   @IBOutlet var destinationLabel: WKInterfaceLabel!
@@ -36,6 +36,11 @@ class FlightRowController: WKInterfaceController {
     }
   }
   
+  func updateForCheckIn() {
+    let color = UIColor(red: 90/255, green: 200/255, blue: 250/255, alpha: 1)
+    planeImage.setTintColor(color)
+    separator.setColor(color)
+  }
   
 }
 

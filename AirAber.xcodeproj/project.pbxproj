@@ -28,6 +28,7 @@
 		8F8958FF2159880F00B7FA2B /* ClassController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8958FE2159880F00B7FA2B /* ClassController.swift */; };
 		8FB2048C215AA0FB005902D8 /* ScheduleInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB2048B215AA0FB005902D8 /* ScheduleInterfaceController.swift */; };
 		8FB2048E215AAB3C005902D8 /* FlightRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB2048D215AAB3C005902D8 /* FlightRowController.swift */; };
+		8FB20490215ADD0F005902D8 /* CheckInInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB2048F215ADD0F005902D8 /* CheckInInterfaceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,7 +75,6 @@
 
 /* Begin PBXFileReference section */
 		1800B8701FC1E26C00855EEC /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
-		40113A891F5A4F760089A5C1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		7B8FA2391B72275A00B1E765 /* AirAber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirAber.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B8FA23C1B72275A00B1E765 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7B8FA23E1B72275A00B1E765 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -98,6 +98,7 @@
 		8F8958FE2159880F00B7FA2B /* ClassController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassController.swift; sourceTree = "<group>"; };
 		8FB2048B215AA0FB005902D8 /* ScheduleInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleInterfaceController.swift; sourceTree = "<group>"; };
 		8FB2048D215AAB3C005902D8 /* FlightRowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightRowController.swift; sourceTree = "<group>"; };
+		8FB2048F215ADD0F005902D8 /* CheckInInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInInterfaceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,7 +122,6 @@
 		7B8FA2301B72275A00B1E765 = {
 			isa = PBXGroup;
 			children = (
-				40113A891F5A4F760089A5C1 /* README.md */,
 				7B8FA23B1B72275A00B1E765 /* AirAber */,
 				7B8FA27B1B724A7400B1E765 /* Shared */,
 				8F8958D82159699900B7FA2B /* FitFirst */,
@@ -188,6 +188,7 @@
 				8F8958D92159699900B7FA2B /* Interface.storyboard */,
 				8F8958DC2159699A00B7FA2B /* Assets.xcassets */,
 				8F8958DE2159699A00B7FA2B /* Info.plist */,
+				8F8958F12159699B00B7FA2B /* PushNotificationPayload.apns */,
 			);
 			path = FitFirst;
 			sourceTree = "<group>";
@@ -195,14 +196,14 @@
 		8F8958E72159699A00B7FA2B /* FitFirst Extension */ = {
 			isa = PBXGroup;
 			children = (
-				8F8958EA2159699A00B7FA2B /* ExtensionDelegate.swift */,
 				8F8958EC2159699A00B7FA2B /* NotificationController.swift */,
 				8F8958EE2159699B00B7FA2B /* Assets.xcassets */,
 				8F8958F02159699B00B7FA2B /* Info.plist */,
-				8F8958F12159699B00B7FA2B /* PushNotificationPayload.apns */,
 				8F8958FE2159880F00B7FA2B /* ClassController.swift */,
+				8F8958EA2159699A00B7FA2B /* ExtensionDelegate.swift */,
 				8FB2048B215AA0FB005902D8 /* ScheduleInterfaceController.swift */,
 				8FB2048D215AAB3C005902D8 /* FlightRowController.swift */,
+				8FB2048F215ADD0F005902D8 /* CheckInInterfaceController.swift */,
 			);
 			path = "FitFirst Extension";
 			sourceTree = "<group>";
@@ -359,6 +360,7 @@
 			files = (
 				8F8958FD2159712000B7FA2B /* Flight.swift in Sources */,
 				8F8958ED2159699A00B7FA2B /* NotificationController.swift in Sources */,
+				8FB20490215ADD0F005902D8 /* CheckInInterfaceController.swift in Sources */,
 				8FB2048E215AAB3C005902D8 /* FlightRowController.swift in Sources */,
 				8FB2048C215AA0FB005902D8 /* ScheduleInterfaceController.swift in Sources */,
 				8F8958FF2159880F00B7FA2B /* ClassController.swift in Sources */,
